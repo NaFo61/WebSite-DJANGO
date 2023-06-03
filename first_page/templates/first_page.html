@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+<header></header>
+
+<div class="wrapper">
+    <h2 class="title">Главная страница</h2>
+    <div> <!-- Для кнопки -->
+        <a href="main/" class="gradient-button">Перейти к списку товаров</a>
+    </div>
+    <div> <!-- Для таблицы -->
+        <ul>
+            {% for developer in developers %}
+                <li>Имя: {{ developer.user }} </li>
+                <ul>
+                    <li>Дата рождения: {{ developer.birthday }}</li>
+                    <li>Почта: {{ developer.email }}</li>
+                    <li>Номер телефона: {{ developer.phone_number }}</li>
+                </ul>
+                <br>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>{{ date }}</p>
+</footer>
+{% endblock %}

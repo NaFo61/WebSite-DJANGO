@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  justify-content: center; /* по вертикали */
+  align-items: center; /* по гориз */
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+    color: #126dff;
+    font-size: 56px;
+}
+
+
+.gradient-button {
+  text-decoration: none;  /* чтобы ссылка не была видна */
+  display: inline-block;
+  color: black;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 30px;  /* закругление унглов */
+  letter-spacing: 2px;  /* ширина */
+  background-image: white;
+  box-shadow: 0 0 20px rgba(0, 0, 100, .5);
+  background-size: 200% auto;
+}
